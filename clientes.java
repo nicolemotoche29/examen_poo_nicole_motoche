@@ -4,22 +4,21 @@ import java.util.Scanner;
 
 public class clientes {
 
-
-        public static void main(String[] args) {
-            int opci;
-            do {
-                System.out.println("MOTOCHE NICOLE");
-                System.out.println(" ");
-                System.out.println("----------------------------------------------------------------");
-                System.out.println("                CAJERO AUTOMATICO ");
-                System.out.println("----------------------------------------------------------------");
-                System.out.println("1) Registrar y guardar clientes");
-                System.out.println("2) Leer clientes en archivo");
-                System.out.println("0) Salir");
-                Scanner opcion = new Scanner(System.in);
-                System.out.print("Ingrese la accion que desea: ");
-                opci = opcion.nextInt();
-                switch (opci) {
+    public static void main(String[] args) {
+        int opci;
+        do {
+            System.out.println("MOTOCHE NICOLE");
+            System.out.println(" ");
+            System.out.println("----------------------------------------------------------------");
+            System.out.println("                CAJERO AUTOMATICO ");
+            System.out.println("----------------------------------------------------------------");
+            System.out.println("1) Registrar y guardar clientes");
+            System.out.println("2) Leer clientes en archivo");
+            System.out.println("0) Salir");
+            Scanner opcion = new Scanner(System.in);
+            System.out.print("Ingrese la accion que desea realizar: ");
+            opci = opcion.nextInt();
+            switch (opci) {
                     case 1: {
 
 
@@ -36,6 +35,6 @@ public class clientes {
                         break;
                     }
                 }
-            }while(opci != 0);
-        }
+        }while(opci != 0);
     }
+}

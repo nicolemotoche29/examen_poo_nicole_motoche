@@ -10,6 +10,7 @@ public class cajero {
     private int retiro;
     private int deposito;
 
+    /*Constructor*/
     public cajero(int id, String nombre, String apellido, int retiro, int deposito) {
         this.id = id;
         this.nombre = nombre;
@@ -18,6 +19,7 @@ public class cajero {
         this.deposito = deposito;
     }
 
+    /*creacion de los setters y getters*/
     public int getId() {
         return id;
     }
@@ -58,6 +60,7 @@ public class cajero {
         this.deposito = deposito;
     }
 
+    //lo que se va a guardar y mostrar en el archivo.txt
     public static void guardar() {
 
         Scanner entrada = new Scanner(System.in);
@@ -70,6 +73,7 @@ public class cajero {
         int retiro=0;
         int deposito=0;
 
+        //lo que se necesita saber del usuario
         for (int i = 0; i < clie.length; i++) {
             System.out.print("Ingrese cedula de identidad: ");
             id = entrada.nextInt();
@@ -100,6 +104,7 @@ public class cajero {
     }
 
 
+    //datos de los usuarios ya ingresados, listos para ser mostrados
     public static void leer(){
         FileReader archivo;
         BufferedReader lector;
